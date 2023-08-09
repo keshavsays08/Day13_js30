@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Andika&family=Bebas+Neue&family=Cinzel&family=Dancing+Script:wght@400;700&family=Montserrat:wght@500&family=Oswald:wght@500&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Rock+Salt&family=Shadows+Into+Light&family=Signika+Negative:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #b2d8d8; */
+    background-image: url(https://images.pexels.com/photos/16688388/pexels-photo-16688388/free-photo-of-silhouette-of-palm-trees-at-dawn.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 50%;
+    background: rgba(255, 255, 255, 0.001);
+    backdrop-filter: blur(18px);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper{
+    margin: 70px auto;
+    width: 70%;
+}
+.text-box{
+    color: #fff;
+}
+.align-right{
+    float:right;
+    margin-left: 15px;
+}
+.align-left{
+    float:left;
+    margin-right: 15px;
+}
+.slide-in{
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.align-left.slide-in{
+    transform:translateX(-30%) scale(0.95);
+}
+.align-right.slide-in{
+    transform:translateX(30%) scale(0.95);
+}
+
+.slide-in.active{
+    opacity: 1;
+    transform: translate(0%) scale(1);
+}
